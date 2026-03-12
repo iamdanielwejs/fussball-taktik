@@ -36,7 +36,7 @@ A browser-based interactive simulation that teaches children (ages 7-12) footbal
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/fussball-taktik.git
+git clone https://github.com/iamdanielwejs/fussball-taktik.git
 cd fussball-taktik
 npm install
 ```

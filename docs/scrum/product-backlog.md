@@ -12,12 +12,12 @@
 > so that I can start feature development right away.
 
 ### Acceptance Criteria
-- [ ] Vite + React + TypeScript project is initialized
-- [ ] TailwindCSS is configured and working
-- [ ] ESLint and Prettier are configured with consistent rules
-- [ ] Vitest is set up with a sample test
-- [ ] `npm run dev`, `npm run build`, `npm run test` run without errors
-- [ ] Folder structure matches the architecture documentation
+- [x] Vite + React + TypeScript project is initialized
+- [x] TailwindCSS is configured and working
+- [x] ESLint and Prettier are configured with consistent rules
+- [x] Vitest is set up with a sample test
+- [x] `npm run dev`, `npm run build`, `npm run test` run without errors
+- [x] Folder structure matches the architecture documentation
 
 ---
 
