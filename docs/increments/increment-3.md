@@ -1,26 +1,26 @@
-# Inkrement 3: "Lernen und Verstehen"
+# Increment 3: "Learn and Understand"
 
 **Sprint:** 3 | **Story Points:** 31
 
-## Beschreibung
-Das Produkt wird zum Lernwerkzeug. Ein gefuehrter Modus erklaert Taktiken Schritt fuer Schritt, Taktiken koennen verglichen werden, und Teams lassen sich individualisieren.
+## Description
+The product becomes a learning tool. A guided mode explains tactics step by step, tactics can be compared side by side, and teams can be customized.
 
-## Enthaltene PBIs (neu in diesem Inkrement)
-- PBI-09: Verschieben zum Ball (8 SP)
-- PBI-11: Taktik-Vergleichsansicht (5 SP)
-- PBI-12: Lern-Modus (13 SP)
-- PBI-14: Team-Farben anpassen (5 SP)
+## Included PBIs (new in this increment)
+- PBI-09: Shifting to the Ball (8 SP)
+- PBI-11: Tactics Comparison View (5 SP)
+- PBI-12: Learning Mode (13 SP)
+- PBI-14: Customize Team Colors (5 SP)
 
-## Nutzbares Ergebnis
-Ein Kind kann zusaetzlich zu Inkrement 2:
-- Verschieben zum Ball erleben: Team rueckt zur Ballseite zusammen
-- Zwei Taktiken nebeneinander vergleichen
-- Jede Taktik in einem gefuehrten Lernmodus Schritt fuer Schritt durchgehen
-- Team-Farben nach Wunsch anpassen (inkl. Vereinsfarben)
+## Usable Outcome
+In addition to Increment 2, a child can:
+- Experience shifting to the ball: the team compresses toward the ball side
+- Compare two tactics side by side
+- Walk through each tactic step by step in a guided learning mode
+- Customize team colors as desired (including club colors)
 
-## Abnahmekriterien
-- [ ] Alle Inkremente 1-2-Kriterien gelten weiterhin
-- [ ] Verschieben zum Ball reagiert auf Ball-Drag
-- [ ] Vergleichsansicht zeigt zwei synchronisierte Spielfelder
-- [ ] Lern-Modus hat mindestens 5 Schritte pro Taktik
-- [ ] Mindestens 8 Farbkombinationen sind verfuegbar
+## Acceptance Criteria
+- [ ] All Increment 1-2 criteria continue to apply
+- [ ] Shifting to the ball reacts to ball drag
+- [ ] Comparison view shows two synchronized pitches
+- [ ] Learning mode has at least 5 steps per tactic
+- [ ] At least 8 color combinations are available

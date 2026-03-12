@@ -1,62 +1,62 @@
-# Sprint 1 Backlog: "Das Spielfeld steht"
+# Sprint 1 Backlog: "The Pitch Is Set"
 
-**Sprint Goal:** Lauffaehige App mit Spielfeld, Spielern und Drag-and-Drop
-**Kapazitaet:** 26 Story Points
+**Sprint Goal:** Working app with pitch, players, and drag-and-drop
+**Capacity:** 26 Story Points
 
 ## Items
 
-| PBI | Titel | SP | Status |
+| PBI | Title | SP | Status |
 |-----|-------|---:|--------|
-| PBI-01 | Projekt-Setup | 3 | To Do |
-| PBI-02 | Spielfeld-Darstellung | 5 | To Do |
-| PBI-03 | Spieler-Figuren | 5 | To Do |
-| PBI-04 | Drag-and-Drop fuer Spieler | 8 | To Do |
+| PBI-01 | Project Setup | 3 | To Do |
+| PBI-02 | Pitch Rendering | 5 | To Do |
+| PBI-03 | Player Figures | 5 | To Do |
+| PBI-04 | Drag-and-Drop for Players | 8 | To Do |
 | PBI-05 | Zustand State Management | 5 | To Do |
 
-## Abhaengigkeiten
+## Dependencies
 
 ```
 PBI-01 (Setup)
-  └── PBI-02 (Spielfeld) + PBI-05 (Store)
-        └── PBI-03 (Spieler)
+  └── PBI-02 (Pitch) + PBI-05 (Store)
+        └── PBI-03 (Players)
               └── PBI-04 (Drag-and-Drop)
 ```
 
-## Tasks (Aufteilung)
+## Tasks (Breakdown)
 
-### PBI-01: Projekt-Setup (3 SP)
-- [ ] Vite + React + TypeScript initialisieren
-- [ ] TailwindCSS einrichten
-- [ ] ESLint + Prettier konfigurieren
-- [ ] Vitest einrichten
-- [ ] Ordnerstruktur anlegen
-- [ ] CI-Skripte in package.json definieren
+### PBI-01: Project Setup (3 SP)
+- [ ] Initialize Vite + React + TypeScript
+- [ ] Set up TailwindCSS
+- [ ] Configure ESLint + Prettier
+- [ ] Set up Vitest
+- [ ] Create folder structure
+- [ ] Define CI scripts in package.json
 
-### PBI-02: Spielfeld-Darstellung (5 SP)
-- [ ] React Konva integrieren
-- [ ] Spielfeld-Komponente mit Rasen-Hintergrund
-- [ ] Linien zeichnen (Mittellinie, Strafraum, Torraum, Mittelkreis)
-- [ ] Normalisiertes Koordinatensystem implementieren (0-100 → Pixel)
-- [ ] Responsive Skalierung
-- [ ] Unit-Tests fuer Koordinaten-Transformation
+### PBI-02: Pitch Rendering (5 SP)
+- [ ] Integrate React Konva
+- [ ] Pitch component with grass background
+- [ ] Draw lines (center line, penalty area, goal area, center circle)
+- [ ] Implement normalized coordinate system (0-100 → pixels)
+- [ ] Responsive scaling
+- [ ] Unit tests for coordinate transformation
 
-### PBI-03: Spieler-Figuren (5 SP)
-- [ ] Player-Komponente (Kreis + Nummer)
-- [ ] Team-Farben-Props
-- [ ] Torwart-Variante
-- [ ] 11 Spieler pro Team rendern
-- [ ] Initiale Positionen definieren
+### PBI-03: Player Figures (5 SP)
+- [ ] Player component (circle + number)
+- [ ] Team color props
+- [ ] Goalkeeper variant
+- [ ] Render 11 players per team
+- [ ] Define initial positions
 
 ### PBI-04: Drag-and-Drop (8 SP)
-- [ ] Maus-Drag implementieren
-- [ ] Touch-Drag implementieren
-- [ ] Boundary-Check (Spielfeldrand)
-- [ ] Visuelles Feedback (Schatten, Hervorhebung)
-- [ ] Position-Update im Store
-- [ ] Performance-Optimierung
+- [ ] Implement mouse drag
+- [ ] Implement touch drag
+- [ ] Boundary check (pitch edges)
+- [ ] Visual feedback (shadow, highlight)
+- [ ] Position update in store
+- [ ] Performance optimization
 
 ### PBI-05: Zustand Store (5 SP)
-- [ ] Store-Struktur definieren (Teams, Spieler, Positionen)
+- [ ] Define store structure (teams, players, positions)
 - [ ] Actions: movePlayer, setFormation, setTacticMode
-- [ ] Selektoren fuer performantes Re-Rendering
-- [ ] Unit-Tests fuer Store-Actions
+- [ ] Selectors for performant re-rendering
+- [ ] Unit tests for store actions

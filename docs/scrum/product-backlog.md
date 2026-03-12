@@ -1,346 +1,346 @@
 # Product Backlog
 
-**Gesamt: 113 Story Points** | **20 Product Backlog Items**
+**Total: 113 Story Points** | **20 Product Backlog Items**
 
 ---
 
-## PBI-01: Projekt-Setup
+## PBI-01: Project Setup
 
-**Story Points:** 3 | **Prioritaet:** Hoechste | **Sprint:** 1
+**Story Points:** 3 | **Priority:** Highest | **Sprint:** 1
 
-> Als Entwickler moechte ich ein vollstaendig konfiguriertes Projekt mit Build-Pipeline,
-> damit ich sofort mit der Feature-Entwicklung beginnen kann.
+> As a developer, I want a fully configured project with a build pipeline,
+> so that I can start feature development right away.
 
-### Akzeptanzkriterien
-- [ ] Vite + React + TypeScript Projekt ist initialisiert
-- [ ] TailwindCSS ist konfiguriert und funktioniert
-- [ ] ESLint und Prettier sind konfiguriert mit einheitlichen Regeln
-- [ ] Vitest ist eingerichtet mit einem Beispiel-Test
-- [ ] `npm run dev`, `npm run build`, `npm run test` funktionieren fehlerfrei
-- [ ] Ordnerstruktur entspricht der Architektur-Dokumentation
-
----
-
-## PBI-02: Spielfeld-Darstellung
-
-**Story Points:** 5 | **Prioritaet:** Hoechste | **Sprint:** 1
-
-> Als Kind moechte ich ein gruenes Fussballfeld sehen mit allen Linien,
-> damit ich weiss, wo auf dem Spielfeld ich mich befinde.
-
-### Akzeptanzkriterien
-- [ ] Spielfeld wird als 2D-Draufsicht mit Konva Canvas gerendert
-- [ ] Mittellinie, Mittelkreis, Strafraum, Torraum und Eckfahnen sind sichtbar
-- [ ] Spielfeld nutzt normalisiertes Koordinatensystem (0-100)
-- [ ] Spielfeld skaliert korrekt bei Fenstergroessenaenderung
-- [ ] Gruener Rasen-Hintergrund mit weissen Linien
-- [ ] Mindestens ein Unit-Test fuer die Koordinaten-Transformation
+### Acceptance Criteria
+- [ ] Vite + React + TypeScript project is initialized
+- [ ] TailwindCSS is configured and working
+- [ ] ESLint and Prettier are configured with consistent rules
+- [ ] Vitest is set up with a sample test
+- [ ] `npm run dev`, `npm run build`, `npm run test` run without errors
+- [ ] Folder structure matches the architecture documentation
 
 ---
 
-## PBI-03: Spieler-Figuren
+## PBI-02: Pitch Rendering
 
-**Story Points:** 5 | **Prioritaet:** Hoechste | **Sprint:** 1
+**Story Points:** 5 | **Priority:** Highest | **Sprint:** 1
 
-> Als Kind moechte ich Spieler als farbige Figuren auf dem Feld sehen,
-> damit ich die beiden Teams unterscheiden kann.
+> As a child, I want to see a green football pitch with all the lines,
+> so that I know where on the field I am.
 
-### Akzeptanzkriterien
-- [ ] Spieler werden als farbige Kreise mit Rueckennummer dargestellt
-- [ ] Zwei Teams sind farblich unterscheidbar (Standard: Rot und Blau)
-- [ ] Jeder Spieler hat eine sichtbare Rueckennummer (1-11)
-- [ ] Spieler-Komponente ist als wiederverwendbare Konva-Komponente implementiert
-- [ ] Spieler-Groesse ist proportional zum Spielfeld
-- [ ] Torwart ist visuell vom Feldspieler unterscheidbar
+### Acceptance Criteria
+- [ ] Pitch is rendered as a 2D top-down view using Konva Canvas
+- [ ] Halfway line, center circle, penalty area, goal area, and corner flags are visible
+- [ ] Pitch uses a normalized coordinate system (0-100)
+- [ ] Pitch scales correctly on window resize
+- [ ] Green grass background with white lines
+- [ ] At least one unit test for the coordinate transformation
 
 ---
 
-## PBI-04: Drag-and-Drop fuer Spieler
+## PBI-03: Player Figures
 
-**Story Points:** 8 | **Prioritaet:** Hoechste | **Sprint:** 1
+**Story Points:** 5 | **Priority:** Highest | **Sprint:** 1
 
-> Als Kind moechte ich Spieler mit der Maus oder dem Finger verschieben koennen,
-> damit ich eigene Aufstellungen ausprobieren kann.
+> As a child, I want to see players as colored figures on the pitch,
+> so that I can tell the two teams apart.
 
-### Akzeptanzkriterien
-- [ ] Spieler lassen sich per Maus (Desktop) ziehen
-- [ ] Spieler lassen sich per Touch (Tablet) ziehen
-- [ ] Waehrend des Ziehens wird der Spieler visuell hervorgehoben
-- [ ] Spieler koennen nicht ausserhalb des Spielfelds platziert werden
-- [ ] Position wird nach dem Loslassen im Store aktualisiert
-- [ ] Drag-and-Drop funktioniert fluessig (>30 FPS)
-- [ ] Visuelles Feedback beim Aufnehmen und Ablegen (z.B. Schatten, Groessenaenderung)
+### Acceptance Criteria
+- [ ] Players are displayed as colored circles with a jersey number
+- [ ] Two teams are visually distinguishable (default: red and blue)
+- [ ] Each player has a visible jersey number (1-11)
+- [ ] Player component is implemented as a reusable Konva component
+- [ ] Player size is proportional to the pitch
+- [ ] Goalkeeper is visually distinguishable from outfield players
+
+---
+
+## PBI-04: Drag-and-Drop for Players
+
+**Story Points:** 8 | **Priority:** Highest | **Sprint:** 1
+
+> As a child, I want to move players with the mouse or my finger,
+> so that I can try out my own formations.
+
+### Acceptance Criteria
+- [ ] Players can be dragged with the mouse (desktop)
+- [ ] Players can be dragged with touch (tablet)
+- [ ] While dragging, the player is visually highlighted
+- [ ] Players cannot be placed outside the pitch
+- [ ] Position is updated in the store after release
+- [ ] Drag-and-drop runs smoothly (>30 FPS)
+- [ ] Visual feedback on pick-up and drop (e.g., shadow, size change)
 
 ---
 
 ## PBI-05: Zustand State Management
 
-**Story Points:** 5 | **Prioritaet:** Hoechste | **Sprint:** 1
+**Story Points:** 5 | **Priority:** Highest | **Sprint:** 1
 
-> Als Entwickler moechte ich einen zentralen State Store,
-> damit alle Komponenten konsistent auf den Spielzustand zugreifen koennen.
+> As a developer, I want a centralized state store,
+> so that all components can access the game state consistently.
 
-### Akzeptanzkriterien
-- [ ] Zustand Store verwaltet Spieler-Positionen beider Teams
-- [ ] Store verwaltet aktive Formation pro Team
-- [ ] Store verwaltet aktiven Taktik-Modus
-- [ ] Store verwaltet Ball-Position
-- [ ] Zustandsaenderungen loesen Re-Rendering nur der betroffenen Komponenten aus
-- [ ] Store-Logik ist durch Unit-Tests abgedeckt
-
----
-
-## PBI-06: Formationen-Auswahl
-
-**Story Points:** 8 | **Prioritaet:** Hoch | **Sprint:** 2
-
-> Als Kind moechte ich aus verschiedenen Formationen auswaehlen koennen (z.B. 4-4-2),
-> damit die Spieler automatisch in die richtige Aufstellung springen.
-
-### Akzeptanzkriterien
-- [ ] Mindestens 3 Formationen sind verfuegbar: 4-4-2, 4-3-3, 3-5-2
-- [ ] Formationen sind als Daten-Konfiguration definiert (nicht hardcoded in UI)
-- [ ] Auswahl ueber kindgerechte Buttons/Karten mit visueller Vorschau
-- [ ] Spieler bewegen sich animiert in die neue Formation
-- [ ] Animation dauert 500-800ms mit Easing
-- [ ] Fuer jedes Team separat waehlbar
-- [ ] Aktive Formation ist visuell hervorgehoben
+### Acceptance Criteria
+- [ ] Zustand store manages player positions for both teams
+- [ ] Store manages the active formation per team
+- [ ] Store manages the active tactic mode
+- [ ] Store manages the ball position
+- [ ] State changes trigger re-rendering only of affected components
+- [ ] Store logic is covered by unit tests
 
 ---
 
-## PBI-07: Manndeckung-Visualisierung
+## PBI-06: Formation Selection
 
-**Story Points:** 8 | **Prioritaet:** Hoch | **Sprint:** 2
+**Story Points:** 8 | **Priority:** High | **Sprint:** 2
 
-> Als Kind moechte ich sehen, wie Manndeckung funktioniert,
-> damit ich verstehe, dass jeder Verteidiger einen bestimmten Gegenspieler bewacht.
+> As a child, I want to choose from different formations (e.g., 4-4-2),
+> so that the players automatically move into the correct positions.
 
-### Akzeptanzkriterien
-- [ ] Im Manndeckungs-Modus wird jedem Verteidiger ein Gegenspieler zugeordnet
-- [ ] Zuordnung wird durch farbige Verbindungslinien dargestellt
-- [ ] Wenn ein Angreifer verschoben wird, folgt der zugeordnete Verteidiger
-- [ ] Follow-Bewegung ist animiert (nicht teleportierend)
-- [ ] Abstand zwischen Verteidiger und Angreifer ist konfigurierbar
-- [ ] Erklaertext beschreibt, was Manndeckung bedeutet
-- [ ] Mindestens ein Test fuer die Zuordnungslogik
-
----
-
-## PBI-08: Raumdeckung-Visualisierung
-
-**Story Points:** 8 | **Prioritaet:** Hoch | **Sprint:** 2
-
-> Als Kind moechte ich sehen, wie Raumdeckung funktioniert,
-> damit ich verstehe, dass Verteidiger feste Zonen bewachen statt einzelne Gegenspieler.
-
-### Akzeptanzkriterien
-- [ ] Spielfeld ist in farbige Zonen unterteilt (halbtransparent)
-- [ ] Jeder Verteidiger ist einer Zone zugeordnet
-- [ ] Zonen sind visuell dem jeweiligen Verteidiger zugeordnet (gleiche Farbe/Markierung)
-- [ ] Verteidiger bleiben in ihrer Zone, auch wenn Angreifer verschoben werden
-- [ ] Erklaertext beschreibt, was Raumdeckung bedeutet
-- [ ] Unterschied zur Manndeckung wird visuell deutlich
-- [ ] Mindestens ein Test fuer die Zonen-Logik
+### Acceptance Criteria
+- [ ] At least 3 formations are available: 4-4-2, 4-3-3, 3-5-2
+- [ ] Formations are defined as data configuration (not hardcoded in the UI)
+- [ ] Selection via child-friendly buttons/cards with a visual preview
+- [ ] Players move to the new formation with animation
+- [ ] Animation lasts 500-800ms with easing
+- [ ] Selectable separately for each team
+- [ ] Active formation is visually highlighted
 
 ---
 
-## PBI-09: Verschieben zum Ball
+## PBI-07: Man-Marking Visualization
 
-**Story Points:** 8 | **Prioritaet:** Hoch | **Sprint:** 3
+**Story Points:** 8 | **Priority:** High | **Sprint:** 2
 
-> Als Kind moechte ich sehen, wie sich das Team zum Ball verschiebt,
-> damit ich verstehe, warum die Spieler immer in Ballnaehe zusammenruecken.
+> As a child, I want to see how man-marking works,
+> so that I understand that each defender guards a specific opponent.
 
-### Akzeptanzkriterien
-- [ ] Ball kann auf dem Spielfeld platziert/verschoben werden
-- [ ] Im Verschieben-Modus bewegen sich alle Verteidiger Richtung Ballseite
-- [ ] Kompaktheit des Teams ist visuell erkennbar
-- [ ] Verschiebung wird animiert dargestellt
-- [ ] Pfeile oder Linien zeigen die Verschiebungsrichtung an
-- [ ] Erklaertext beschreibt das Konzept des Verschiebens
-- [ ] Unterschied zu Manndeckung und Raumdeckung ist erkennbar
-
----
-
-## PBI-10: Navigation und Hauptmenue
-
-**Story Points:** 5 | **Prioritaet:** Hoch | **Sprint:** 2
-
-> Als Kind moechte ich ein einfaches Menue sehen,
-> damit ich zwischen den verschiedenen Taktik-Ansichten wechseln kann.
-
-### Akzeptanzkriterien
-- [ ] Hauptmenue mit grossen, farbigen Buttons fuer jede Taktik
-- [ ] Navigation zwischen Menue und Taktik-Ansichten
-- [ ] Zurueck-Button auf jeder Seite
-- [ ] Aktive Seite ist visuell hervorgehoben
-- [ ] Menue ist auch auf Tablets gut bedienbar (grosse Klickflaechen)
-- [ ] Kindgerechte Icons oder Illustrationen bei den Menue-Punkten
+### Acceptance Criteria
+- [ ] In man-marking mode, each defender is assigned to an opponent
+- [ ] Assignments are shown as colored connecting lines
+- [ ] When an attacker is moved, the assigned defender follows
+- [ ] The follow movement is animated (not teleporting)
+- [ ] Distance between defender and attacker is configurable
+- [ ] Explanatory text describes what man-marking means
+- [ ] At least one test for the assignment logic
 
 ---
 
-## PBI-11: Taktik-Vergleichsansicht
+## PBI-08: Zone Defense Visualization
 
-**Story Points:** 5 | **Prioritaet:** Mittel | **Sprint:** 3
+**Story Points:** 8 | **Priority:** High | **Sprint:** 2
 
-> Als Kind moechte ich zwei Taktiken nebeneinander vergleichen koennen,
-> damit ich die Unterschiede besser verstehe.
+> As a child, I want to see how zone defense works,
+> so that I understand that defenders guard fixed zones instead of individual opponents.
 
-### Akzeptanzkriterien
-- [ ] Split-Screen mit zwei Spielfeldern nebeneinander
-- [ ] Jedes Feld zeigt eine andere Taktik (z.B. Manndeckung vs. Raumdeckung)
-- [ ] Beide Felder sind synchronisiert (gleiche Angreifer-Positionen)
-- [ ] Auswahl der zu vergleichenden Taktiken ueber Dropdown/Buttons
-- [ ] Funktioniert auf Tablets im Querformat
-
----
-
-## PBI-12: Lern-Modus mit Schritt-fuer-Schritt-Erklaerungen
-
-**Story Points:** 13 | **Prioritaet:** Mittel | **Sprint:** 3
-
-> Als Kind moechte ich eine gefuehrte Erklaerung Schritt fuer Schritt durchgehen,
-> damit ich jede Taktik in meinem eigenen Tempo verstehen kann.
-
-### Akzeptanzkriterien
-- [ ] Jede Taktik hat eine Schritt-fuer-Schritt-Sequenz (mindestens 5 Schritte)
-- [ ] Schritte werden durch Weiter/Zurueck-Buttons navigiert
-- [ ] Jeder Schritt hat einen kurzen, kindgerechten Erklaertext
-- [ ] Relevante Spieler/Zonen werden im jeweiligen Schritt hervorgehoben
-- [ ] Fortschrittsanzeige (z.B. "Schritt 3 von 7")
-- [ ] Animationen begleiten die Erklaerungen
-- [ ] Am Ende jeder Lektion gibt es eine kurze Zusammenfassung
-- [ ] Lern-Schritte sind als Daten-Konfiguration definiert (nicht hardcoded)
+### Acceptance Criteria
+- [ ] Pitch is divided into colored zones (semi-transparent)
+- [ ] Each defender is assigned to a zone
+- [ ] Zones are visually linked to their respective defender (same color/marker)
+- [ ] Defenders stay in their zone even when attackers are moved
+- [ ] Explanatory text describes what zone defense means
+- [ ] The difference from man-marking is visually clear
+- [ ] At least one test for the zone logic
 
 ---
 
-## PBI-13: Animierter Ball
+## PBI-09: Shifting Toward the Ball
 
-**Story Points:** 3 | **Prioritaet:** Mittel | **Sprint:** 2
+**Story Points:** 8 | **Priority:** High | **Sprint:** 3
 
-> Als Kind moechte ich einen Ball auf dem Feld sehen und bewegen koennen,
-> damit die Taktik-Visualisierungen realistischer wirken.
+> As a child, I want to see how the team shifts toward the ball,
+> so that I understand why players always move closer to where the ball is.
 
-### Akzeptanzkriterien
-- [ ] Ball wird als rundes Objekt mit Fussball-Optik dargestellt
-- [ ] Ball kann per Drag-and-Drop verschoben werden
-- [ ] Ball-Position wird im Store verwaltet
-- [ ] Ball reagiert auf Taktik-Modus (z.B. Verschieben zum Ball)
-- [ ] Ball kann nicht ausserhalb des Feldes platziert werden
-
----
-
-## PBI-14: Team-Farben anpassen
-
-**Story Points:** 5 | **Prioritaet:** Mittel | **Sprint:** 3
-
-> Als Kind moechte ich die Farben meiner Teams aendern koennen,
-> damit sie wie mein Lieblingsverein aussehen.
-
-### Akzeptanzkriterien
-- [ ] Farbauswahl-Panel fuer jedes Team
-- [ ] Mindestens 8 vordefinierte Farbkombinationen
-- [ ] Farbaenderung wird sofort auf dem Spielfeld sichtbar
-- [ ] Ausgewaehlte Farben werden im Store gespeichert
-- [ ] Kontrastpruefung: Teams muessen sich farblich unterscheiden
-- [ ] Vordefinierte Vereinsfarben als Schnellauswahl (z.B. "Bayern", "Dortmund")
+### Acceptance Criteria
+- [ ] Ball can be placed/moved on the pitch
+- [ ] In shifting mode, all defenders move toward the ball side
+- [ ] Team compactness is visually recognizable
+- [ ] Shifting is displayed with animation
+- [ ] Arrows or lines indicate the direction of the shift
+- [ ] Explanatory text describes the concept of shifting
+- [ ] The difference from man-marking and zone defense is apparent
 
 ---
 
-## PBI-15: Speichern und Laden von Aufstellungen
+## PBI-10: Navigation and Main Menu
 
-**Story Points:** 5 | **Prioritaet:** Mittel | **Sprint:** 4
+**Story Points:** 5 | **Priority:** High | **Sprint:** 2
 
-> Als Kind moechte ich meine Aufstellung speichern und spaeter wieder laden,
-> damit ich meine Arbeit nicht verliere.
+> As a child, I want to see a simple menu,
+> so that I can switch between the different tactic views.
 
-### Akzeptanzkriterien
-- [ ] Speichern-Button speichert aktuelle Aufstellung in LocalStorage
-- [ ] Gespeicherte Aufstellungen werden in einer Liste angezeigt
-- [ ] Aufstellungen koennen benannt werden
-- [ ] Laden stellt Spieler-Positionen, Formation und Taktik-Modus wieder her
-- [ ] Loeschen einzelner gespeicherter Aufstellungen moeglich
-- [ ] Maximal 10 gespeicherte Aufstellungen
-
----
-
-## PBI-16: Sound-Effekte
-
-**Story Points:** 3 | **Prioritaet:** Niedrig | **Sprint:** 4
-
-> Als Kind moechte ich lustige Sounds hoeren, wenn ich Spieler bewege,
-> damit die App sich lebendiger anfuehlt.
-
-### Akzeptanzkriterien
-- [ ] Sound beim Aufnehmen eines Spielers
-- [ ] Sound beim Ablegen eines Spielers
-- [ ] Sound beim Wechseln der Formation
-- [ ] Sound-Effekte koennen ein-/ausgeschaltet werden
-- [ ] Lautstaerke ist angemessen und nicht erschreckend
-- [ ] Sounds funktionieren auf Desktop und Tablet
+### Acceptance Criteria
+- [ ] Main menu with large, colorful buttons for each tactic
+- [ ] Navigation between menu and tactic views
+- [ ] Back button on every page
+- [ ] Active page is visually highlighted
+- [ ] Menu is easy to use on tablets (large tap targets)
+- [ ] Child-friendly icons or illustrations on the menu items
 
 ---
 
-## PBI-17: Responsive Design fuer Tablets
+## PBI-11: Tactic Comparison View
 
-**Story Points:** 5 | **Prioritaet:** Niedrig | **Sprint:** 4
+**Story Points:** 5 | **Priority:** Medium | **Sprint:** 3
 
-> Als Kind moechte ich die App auch auf meinem Tablet gut nutzen koennen,
-> damit ich ueberall damit lernen kann.
+> As a child, I want to compare two tactics side by side,
+> so that I can better understand the differences.
 
-### Akzeptanzkriterien
-- [ ] Layout passt sich an Tablet-Bildschirmgroessen an (768px-1024px)
-- [ ] Touch-Ziele sind mindestens 44x44px
-- [ ] Spielfeld nutzt verfuegbare Flaeche optimal
-- [ ] Menue ist im Querformat und Hochformat nutzbar
-- [ ] Keine horizontalen Scrollbalken
-- [ ] Getestet auf iPad und Android-Tablet Viewports
-
----
-
-## PBI-18: Erklaer-Popups
-
-**Story Points:** 3 | **Prioritaet:** Niedrig | **Sprint:** 4
-
-> Als Kind moechte ich auf Begriffe tippen und eine Erklaerung sehen,
-> damit ich neue Woerter direkt verstehen kann.
-
-### Akzeptanzkriterien
-- [ ] Fachbegriffe im UI sind als klickbare Elemente markiert
-- [ ] Popup zeigt kindgerechte Erklaerung des Begriffs
-- [ ] Popup schliesst sich beim Klick ausserhalb
-- [ ] Erklaerungen sind maximal 2-3 Saetze lang
-- [ ] Mindestens 10 Begriffe sind mit Erklaerungen hinterlegt
+### Acceptance Criteria
+- [ ] Split-screen with two pitches side by side
+- [ ] Each pitch shows a different tactic (e.g., man-marking vs. zone defense)
+- [ ] Both pitches are synchronized (same attacker positions)
+- [ ] Selection of tactics to compare via dropdown/buttons
+- [ ] Works on tablets in landscape orientation
 
 ---
 
-## PBI-19: Export als Bild
+## PBI-12: Learning Mode with Step-by-Step Explanations
 
-**Story Points:** 3 | **Prioritaet:** Niedrig | **Sprint:** 4
+**Story Points:** 13 | **Priority:** Medium | **Sprint:** 3
 
-> Als Kind moechte ich meine Aufstellung als Bild speichern,
-> damit ich sie meinem Trainer oder Freunden zeigen kann.
+> As a child, I want to go through a guided explanation step by step,
+> so that I can understand each tactic at my own pace.
 
-### Akzeptanzkriterien
-- [ ] Export-Button erzeugt ein PNG-Bild des aktuellen Spielfelds
-- [ ] Bild enthaelt Spielfeld, Spieler und aktive Taktik-Visualisierung
-- [ ] Download wird automatisch im Browser ausgeloest
-- [ ] Bildqualitaet ist ausreichend fuer Anzeige auf Bildschirm
-- [ ] Dateiname enthaelt Datum und Formation
+### Acceptance Criteria
+- [ ] Each tactic has a step-by-step sequence (at least 5 steps)
+- [ ] Steps are navigated using Next/Back buttons
+- [ ] Each step has a short, child-friendly explanatory text
+- [ ] Relevant players/zones are highlighted in the respective step
+- [ ] Progress indicator (e.g., "Step 3 of 7")
+- [ ] Animations accompany the explanations
+- [ ] A brief summary is shown at the end of each lesson
+- [ ] Learning steps are defined as data configuration (not hardcoded)
 
 ---
 
-## PBI-20: Willkommens-Tutorial
+## PBI-13: Animated Ball
 
-**Story Points:** 5 | **Prioritaet:** Niedrig | **Sprint:** 4
+**Story Points:** 3 | **Priority:** Medium | **Sprint:** 2
 
-> Als Kind, das die App zum ersten Mal oeffnet, moechte ich eine kurze Einfuehrung sehen,
-> damit ich weiss, was ich hier machen kann und wie alles funktioniert.
+> As a child, I want to see a ball on the pitch and be able to move it,
+> so that the tactic visualizations feel more realistic.
 
-### Akzeptanzkriterien
-- [ ] Tutorial startet automatisch beim ersten Besuch
-- [ ] Maximal 5 Schritte mit grossen Bildern und kurzem Text
-- [ ] Jeder Schritt hebt einen Bereich der App hervor (Spotlight-Effekt)
-- [ ] Ueberspringen-Button ist immer sichtbar
-- [ ] Tutorial kann aus dem Menue erneut gestartet werden
-- [ ] Tutorial-Status wird in LocalStorage gespeichert
+### Acceptance Criteria
+- [ ] Ball is displayed as a round object with a football look
+- [ ] Ball can be moved via drag-and-drop
+- [ ] Ball position is managed in the store
+- [ ] Ball reacts to the tactic mode (e.g., shifting toward the ball)
+- [ ] Ball cannot be placed outside the pitch
+
+---
+
+## PBI-14: Customize Team Colors
+
+**Story Points:** 5 | **Priority:** Medium | **Sprint:** 3
+
+> As a child, I want to change the colors of my teams,
+> so that they look like my favorite club.
+
+### Acceptance Criteria
+- [ ] Color selection panel for each team
+- [ ] At least 8 predefined color combinations
+- [ ] Color changes are immediately visible on the pitch
+- [ ] Selected colors are saved in the store
+- [ ] Contrast check: teams must be visually distinguishable
+- [ ] Predefined club colors as quick selection (e.g., "Bayern", "Dortmund")
+
+---
+
+## PBI-15: Save and Load Formations
+
+**Story Points:** 5 | **Priority:** Medium | **Sprint:** 4
+
+> As a child, I want to save my formation and load it again later,
+> so that I don't lose my work.
+
+### Acceptance Criteria
+- [ ] Save button stores the current formation in LocalStorage
+- [ ] Saved formations are displayed in a list
+- [ ] Formations can be named
+- [ ] Loading restores player positions, formation, and tactic mode
+- [ ] Individual saved formations can be deleted
+- [ ] Maximum of 10 saved formations
+
+---
+
+## PBI-16: Sound Effects
+
+**Story Points:** 3 | **Priority:** Low | **Sprint:** 4
+
+> As a child, I want to hear fun sounds when I move players,
+> so that the app feels more lively.
+
+### Acceptance Criteria
+- [ ] Sound when picking up a player
+- [ ] Sound when dropping a player
+- [ ] Sound when switching formations
+- [ ] Sound effects can be toggled on/off
+- [ ] Volume is appropriate and not startling
+- [ ] Sounds work on desktop and tablet
+
+---
+
+## PBI-17: Responsive Design for Tablets
+
+**Story Points:** 5 | **Priority:** Low | **Sprint:** 4
+
+> As a child, I want to use the app comfortably on my tablet,
+> so that I can learn with it anywhere.
+
+### Acceptance Criteria
+- [ ] Layout adapts to tablet screen sizes (768px-1024px)
+- [ ] Touch targets are at least 44x44px
+- [ ] Pitch uses available space optimally
+- [ ] Menu is usable in landscape and portrait orientation
+- [ ] No horizontal scrollbars
+- [ ] Tested on iPad and Android tablet viewports
+
+---
+
+## PBI-18: Explanation Popups
+
+**Story Points:** 3 | **Priority:** Low | **Sprint:** 4
+
+> As a child, I want to tap on terms and see an explanation,
+> so that I can understand new words right away.
+
+### Acceptance Criteria
+- [ ] Technical terms in the UI are marked as tappable elements
+- [ ] Popup shows a child-friendly explanation of the term
+- [ ] Popup closes when tapping outside of it
+- [ ] Explanations are a maximum of 2-3 sentences long
+- [ ] At least 10 terms have explanations
+
+---
+
+## PBI-19: Export as Image
+
+**Story Points:** 3 | **Priority:** Low | **Sprint:** 4
+
+> As a child, I want to save my formation as an image,
+> so that I can show it to my coach or friends.
+
+### Acceptance Criteria
+- [ ] Export button generates a PNG image of the current pitch
+- [ ] Image includes the pitch, players, and the active tactic visualization
+- [ ] Download is triggered automatically in the browser
+- [ ] Image quality is sufficient for on-screen display
+- [ ] File name includes the date and formation
+
+---
+
+## PBI-20: Welcome Tutorial
+
+**Story Points:** 5 | **Priority:** Low | **Sprint:** 4
+
+> As a child opening the app for the first time, I want to see a short introduction,
+> so that I know what I can do here and how everything works.
+
+### Acceptance Criteria
+- [ ] Tutorial starts automatically on the first visit
+- [ ] Maximum of 5 steps with large images and short text
+- [ ] Each step highlights an area of the app (spotlight effect)
+- [ ] Skip button is always visible
+- [ ] Tutorial can be restarted from the menu
+- [ ] Tutorial status is saved in LocalStorage

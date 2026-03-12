@@ -1,13 +1,13 @@
-# Technische Architektur
+# Technical Architecture
 
 ## Tech Stack
 
-| Technologie | Zweck | Version |
-|-------------|-------|---------|
-| React | UI-Framework | 19.x |
-| TypeScript | Typsicherheit | 5.x |
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| React | UI Framework | 19.x |
+| TypeScript | Type Safety | 5.x |
 | Vite | Build Tool & Dev Server | 6.x |
-| React Konva | 2D Canvas Rendering (Spielfeld) | 18.x |
+| React Konva | 2D Canvas Rendering (Pitch) | 18.x |
 | TailwindCSS | Utility-first CSS | 4.x |
 | Zustand | State Management | 5.x |
 | React Router | Client-side Routing | 7.x |
@@ -15,132 +15,132 @@
 | ESLint | Linting | 9.x |
 | Prettier | Code Formatting | 3.x |
 
-## Ordnerstruktur
+## Folder Structure
 
 ```
 src/
 ├── main.tsx                    # Entry Point
-├── App.tsx                     # Root-Komponente mit Router
+├── App.tsx                     # Root component with Router
 ├── index.css                   # Tailwind Imports
 │
-├── components/                 # React-Komponenten
-│   ├── field/                  # Spielfeld-Komponenten
+├── components/                 # React Components
+│   ├── field/                  # Pitch Components
 │   │   ├── Field.tsx           # Konva Stage & Layer Setup
-│   │   ├── Pitch.tsx           # Spielfeld-Linien & Markierungen
-│   │   ├── Player.tsx          # Einzelner Spieler (Konva Circle + Text)
-│   │   ├── Ball.tsx            # Fussball-Objekt
-│   │   └── ZoneOverlay.tsx     # Raumdeckungs-Zonen
+│   │   ├── Pitch.tsx           # Pitch lines & markings
+│   │   ├── Player.tsx          # Individual player (Konva Circle + Text)
+│   │   ├── Ball.tsx            # Football object
+│   │   └── ZoneOverlay.tsx     # Zonal marking zones
 │   │
-│   ├── tactics/                # Taktik-Visualisierungen
-│   │   ├── ManMarkingLines.tsx # Manndeckungs-Verbindungslinien
-│   │   ├── ZoneDefense.tsx     # Raumdeckungs-Darstellung
-│   │   ├── Shifting.tsx        # Verschieben-zum-Ball-Visualisierung
-│   │   └── CompareView.tsx     # Split-Screen Vergleich
+│   ├── tactics/                # Tactics Visualizations
+│   │   ├── ManMarkingLines.tsx # Man-marking connection lines
+│   │   ├── ZoneDefense.tsx     # Zonal marking display
+│   │   ├── Shifting.tsx        # Shifting-to-ball visualization
+│   │   └── CompareView.tsx     # Split-screen comparison
 │   │
-│   ├── ui/                     # Allgemeine UI-Komponenten
-│   │   ├── Button.tsx          # Kindgerechter Button
-│   │   ├── FormationPicker.tsx # Formations-Auswahl
-│   │   ├── ColorPicker.tsx     # Team-Farbauswahl
-│   │   ├── Popup.tsx           # Erklaer-Popup
-│   │   ├── Tutorial.tsx        # Willkommens-Tutorial
-│   │   └── ProgressBar.tsx     # Fortschrittsanzeige
+│   ├── ui/                     # General UI Components
+│   │   ├── Button.tsx          # Child-friendly button
+│   │   ├── FormationPicker.tsx # Formation selector
+│   │   ├── ColorPicker.tsx     # Team color selector
+│   │   ├── Popup.tsx           # Explanation popup
+│   │   ├── Tutorial.tsx        # Welcome tutorial
+│   │   └── ProgressBar.tsx     # Progress indicator
 │   │
-│   └── learning/               # Lern-Modus
-│       ├── LessonView.tsx      # Schritt-fuer-Schritt Ansicht
-│       ├── StepNavigation.tsx  # Weiter/Zurueck Buttons
-│       └── StepContent.tsx     # Einzelner Lernschritt
+│   └── learning/               # Learning Mode
+│       ├── LessonView.tsx      # Step-by-step view
+│       ├── StepNavigation.tsx  # Next/Back buttons
+│       └── StepContent.tsx     # Individual learning step
 │
 ├── store/                      # Zustand State Management
-│   ├── useGameStore.ts         # Haupt-Store (Spieler, Ball, Taktik)
-│   ├── useUIStore.ts           # UI-State (Navigation, Modals)
-│   └── useLearningStore.ts     # Lern-Modus State
+│   ├── useGameStore.ts         # Main store (players, ball, tactics)
+│   ├── useUIStore.ts           # UI state (navigation, modals)
+│   └── useLearningStore.ts     # Learning mode state
 │
-├── engine/                     # Taktik-Berechnungen (reine Logik)
-│   ├── formations.ts           # Formationsdaten & Positionsberechnung
-│   ├── manMarking.ts           # Manndeckungs-Zuordnung
-│   ├── zoneDefense.ts          # Raumdeckungs-Zonen & Zuordnung
-│   ├── shifting.ts             # Verschiebungslogik
-│   └── coordinates.ts          # Normalisiertes Koordinatensystem
+├── engine/                     # Tactics Calculations (pure logic)
+│   ├── formations.ts           # Formation data & position calculation
+│   ├── manMarking.ts           # Man-marking assignment
+│   ├── zoneDefense.ts          # Zonal marking zones & assignment
+│   ├── shifting.ts             # Shifting logic
+│   └── coordinates.ts          # Normalized coordinate system
 │
-├── data/                       # Statische Konfigurationsdaten
-│   ├── formations.json         # Formationsdefinitionen (4-4-2, etc.)
-│   ├── lessons/                # Lernschritt-Definitionen
+├── data/                       # Static Configuration Data
+│   ├── formations.json         # Formation definitions (4-4-2, etc.)
+│   ├── lessons/                # Learning step definitions
 │   │   ├── man-marking.json
 │   │   ├── zone-defense.json
 │   │   └── shifting.json
-│   ├── glossary.json           # Fachbegriffe & Erklaerungen
-│   └── teamColors.json         # Vordefinierte Farbkombinationen
+│   ├── glossary.json           # Technical terms & explanations
+│   └── teamColors.json         # Predefined color combinations
 │
-├── services/                   # Infrastruktur-Services
-│   ├── storage.ts              # LocalStorage Speichern/Laden
-│   ├── audio.ts                # Sound-Effekte
-│   └── export.ts               # Bild-Export
+├── services/                   # Infrastructure Services
+│   ├── storage.ts              # LocalStorage save/load
+│   ├── audio.ts                # Sound effects
+│   └── export.ts               # Image export
 │
 ├── hooks/                      # Custom React Hooks
-│   ├── useDragAndDrop.ts       # Drag-and-Drop Logik
-│   ├── useFieldScale.ts        # Spielfeld-Skalierung
-│   └── useAnimation.ts         # Animations-Utilities
+│   ├── useDragAndDrop.ts       # Drag-and-drop logic
+│   ├── useFieldScale.ts        # Pitch scaling
+│   └── useAnimation.ts         # Animation utilities
 │
-├── pages/                      # Seiten-Komponenten (Routes)
-│   ├── Home.tsx                # Hauptmenue
-│   ├── FreeMode.tsx            # Freies Aufstellen
-│   ├── ManMarkingPage.tsx      # Manndeckungs-Ansicht
-│   ├── ZoneDefensePage.tsx     # Raumdeckungs-Ansicht
-│   ├── ShiftingPage.tsx        # Verschieben-Ansicht
-│   ├── ComparePage.tsx         # Vergleichsansicht
-│   └── LearningPage.tsx        # Lern-Modus
+├── pages/                      # Page Components (Routes)
+│   ├── Home.tsx                # Main menu
+│   ├── FreeMode.tsx            # Free positioning
+│   ├── ManMarkingPage.tsx      # Man-marking view
+│   ├── ZoneDefensePage.tsx     # Zonal marking view
+│   ├── ShiftingPage.tsx        # Shifting view
+│   ├── ComparePage.tsx         # Comparison view
+│   └── LearningPage.tsx        # Learning mode
 │
-├── types/                      # TypeScript Typ-Definitionen
+├── types/                      # TypeScript Type Definitions
 │   ├── player.ts               # Player, Team, Position
 │   ├── tactics.ts              # TacticMode, Zone, Formation
 │   └── learning.ts             # LessonStep, Lesson
 │
-└── utils/                      # Hilfsfunktionen
-    ├── math.ts                 # Geometrische Berechnungen
-    └── colors.ts               # Farbkontrast-Pruefung
+└── utils/                      # Utility Functions
+    ├── math.ts                 # Geometric calculations
+    └── colors.ts               # Color contrast checking
 ```
 
-## Architekturentscheidungen
+## Architecture Decisions
 
-### 1. Konva Layer-Strategie
+### 1. Konva Layer Strategy
 
-Das Spielfeld verwendet mehrere Konva-Layer fuer optimale Performance:
+The pitch uses multiple Konva layers for optimal performance:
 
 ```
 Stage
-├── Layer: Background     (Rasen, statisch, selten re-rendered)
-├── Layer: Pitch Lines    (Linien, statisch)
-├── Layer: Zones          (Raumdeckungs-Zonen, halbtransparent)
-├── Layer: Connections    (Manndeckungs-Linien, Verschiebungspfeile)
-├── Layer: Players        (Spieler-Figuren, haeufig re-rendered)
-└── Layer: Ball           (Ball-Objekt, haeufig re-rendered)
+├── Layer: Background     (Grass, static, rarely re-rendered)
+├── Layer: Pitch Lines    (Lines, static)
+├── Layer: Zones          (Zonal marking zones, semi-transparent)
+├── Layer: Connections    (Man-marking lines, shifting arrows)
+├── Layer: Players        (Player figures, frequently re-rendered)
+└── Layer: Ball           (Ball object, frequently re-rendered)
 ```
 
-**Begruendung:** Durch Layer-Trennung muss nur der Layer neu gerendert werden, der sich aendert. Statische Elemente (Rasen, Linien) werden einmal gezeichnet und gecacht.
+**Rationale:** By separating layers, only the layer that changes needs to be re-rendered. Static elements (grass, lines) are drawn once and cached.
 
-### 2. Normalisiertes Koordinatensystem
+### 2. Normalized Coordinate System
 
-Alle Spieler-Positionen werden in normalisierten Koordinaten (0-100) gespeichert:
+All player positions are stored in normalized coordinates (0-100):
 
 ```typescript
-// Normalisierte Position (gespeichert im Store)
-{ x: 50, y: 25 }  // Mitte des Feldes, oberes Viertel
+// Normalized position (stored in the store)
+{ x: 50, y: 25 }  // Center of the pitch, upper quarter
 
-// Pixel-Position (berechnet beim Rendern)
-{ x: 500, y: 175 } // bei einem 1000x700 Canvas
+// Pixel position (calculated during rendering)
+{ x: 500, y: 175 } // for a 1000x700 canvas
 ```
 
-**Begruendung:** Ermoeglicht saubere Skalierung auf verschiedene Bildschirmgroessen und vereinfacht die Taktik-Berechnungen (Zonen, Abstande).
+**Rationale:** Enables clean scaling across different screen sizes and simplifies tactics calculations (zones, distances).
 
-### 3. Taktik-Engine Pattern
+### 3. Tactics Engine Pattern
 
-Die Taktik-Logik ist strikt von der UI getrennt:
+The tactics logic is strictly separated from the UI:
 
 ```
-UI-Komponente → ruft Engine-Funktion → berechnet neue Positionen → Store-Update → Re-Render
+UI Component → calls Engine function → calculates new positions → Store update → Re-render
 ```
 
-Engine-Funktionen sind pure Functions ohne Side Effects:
+Engine functions are pure functions without side effects:
 
 ```typescript
 // engine/manMarking.ts
@@ -155,21 +155,21 @@ function isInZone(position: Position, zone: Zone): boolean
 function calculateShift(players: Player[], ballPosition: Position): Position[]
 ```
 
-**Begruendung:** Pure Functions sind einfach zu testen, wiederverwendbar und unabhaengig vom UI-Framework.
+**Rationale:** Pure functions are easy to test, reusable, and independent of the UI framework.
 
-### 4. State-Architektur (Zustand)
+### 4. State Architecture (Zustand)
 
-Drei separate Stores fuer klare Verantwortlichkeiten:
+Three separate stores for clear separation of concerns:
 
-- **useGameStore**: Spielzustand (Spieler, Ball, Formation, Taktik-Modus)
-- **useUIStore**: UI-Zustand (aktive Seite, Modals, Sound-Einstellungen)
-- **useLearningStore**: Lern-Modus (aktuelle Lektion, Schritt, Fortschritt)
+- **useGameStore**: Game state (players, ball, formation, tactics mode)
+- **useUIStore**: UI state (active page, modals, sound settings)
+- **useLearningStore**: Learning mode (current lesson, step, progress)
 
-**Begruendung:** Trennung verhindert unnoetige Re-Renders. Aenderungen am UI-State (z.B. Modal oeffnen) loesen kein Re-Rendering der Spielfeld-Komponenten aus.
+**Rationale:** Separation prevents unnecessary re-renders. Changes to UI state (e.g., opening a modal) do not trigger re-rendering of pitch components.
 
-### 5. Datengetriebene Konfiguration
+### 5. Data-Driven Configuration
 
-Formationen, Lernschritte und Glossar werden als JSON-Dateien definiert, nicht im Code hardcoded. Das ermoeglicht:
-- Einfaches Hinzufuegen neuer Formationen/Lektionen ohne Code-Aenderungen
-- Klare Trennung von Inhalt und Logik
-- Potentiell spaeteres Laden von externen Quellen
+Formations, learning steps, and the glossary are defined as JSON files rather than being hardcoded. This enables:
+- Easy addition of new formations/lessons without code changes
+- Clear separation of content and logic
+- Potential future loading from external sources

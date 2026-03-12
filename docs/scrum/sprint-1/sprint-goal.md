@@ -1,19 +1,19 @@
-# Sprint 1: "Das Spielfeld steht"
+# Sprint 1: "The Pitch Is Set"
 
-## Sprint-Zeitraum
-2 Wochen
+## Sprint Duration
+2 weeks
 
 ## Sprint Goal
-Am Ende von Sprint 1 existiert eine lauffaehige Webanwendung, die ein Fussballfeld mit zwei Teams aus je 11 Spielern anzeigt. Spieler koennen per Drag-and-Drop verschoben werden, und alle Positionen werden zentral im State verwaltet.
+By the end of Sprint 1, there is a working web application that displays a football pitch with two teams of 11 players each. Players can be repositioned via drag-and-drop, and all positions are managed centrally in the state.
 
-## Erfolgskriterien
-- Ein Kind kann die App oeffnen und sieht sofort ein Fussballfeld mit Spielern
-- Spieler lassen sich mit Maus und Touch verschieben
-- Die App baut fehlerfrei und alle Tests bestehen
+## Success Criteria
+- A child can open the app and immediately see a football pitch with players
+- Players can be moved using mouse and touch
+- The app builds without errors and all tests pass
 
-## Kapazitaet
+## Capacity
 **26 Story Points**
 
-## Risiken
-- Konva-Canvas und Touch-Events koennten auf verschiedenen Browsern unterschiedlich reagieren
-- Performance bei vielen gleichzeitigen Konva-Elementen muss frueh getestet werden
+## Risks
+- Konva canvas and touch events may behave differently across browsers
+- Performance with many simultaneous Konva elements needs to be tested early

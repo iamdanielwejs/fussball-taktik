@@ -1,58 +1,58 @@
-# Sprint 3 Backlog: "Lernen und Verstehen"
+# Sprint 3 Backlog: "Learn and Understand"
 
-**Sprint Goal:** Lern-Modus, Vergleichsansicht, Verschieben und Teamfarben
-**Kapazitaet:** 31 Story Points
+**Sprint Goal:** Learning mode, comparison view, shifting, and team colors
+**Capacity:** 31 Story Points
 
 ## Items
 
-| PBI | Titel | SP | Status |
+| PBI | Title | SP | Status |
 |-----|-------|---:|--------|
-| PBI-09 | Verschieben zum Ball | 8 | To Do |
-| PBI-11 | Taktik-Vergleichsansicht | 5 | To Do |
-| PBI-12 | Lern-Modus | 13 | To Do |
-| PBI-14 | Team-Farben anpassen | 5 | To Do |
+| PBI-09 | Shifting Toward the Ball | 8 | To Do |
+| PBI-11 | Tactic Comparison View | 5 | To Do |
+| PBI-12 | Learning Mode | 13 | To Do |
+| PBI-14 | Customize Team Colors | 5 | To Do |
 
-## Abhaengigkeiten
+## Dependencies
 
 ```
-PBI-09 (Verschieben)   PBI-14 (Farben)
-  └── PBI-11 (Vergleich)
-        └── PBI-12 (Lern-Modus)
+PBI-09 (Shifting)   PBI-14 (Colors)
+  └── PBI-11 (Comparison)
+        └── PBI-12 (Learning Mode)
 ```
 
-## Tasks (Aufteilung)
+## Tasks (Breakdown)
 
-### PBI-09: Verschieben zum Ball (8 SP)
-- [ ] Verschiebungs-Algorithmus (Team rueckt zur Ballseite)
-- [ ] Kompaktheits-Berechnung
-- [ ] Pfeil-/Linien-Visualisierung der Verschiebungsrichtung
-- [ ] Animierte Spieler-Bewegung
-- [ ] Integration mit Ball-Drag
-- [ ] Erklaertext-Komponente
-- [ ] Tests fuer Verschiebungslogik
+### PBI-09: Shifting Toward the Ball (8 SP)
+- [ ] Shifting algorithm (team moves toward ball side)
+- [ ] Compactness calculation
+- [ ] Arrow/line visualization of shifting direction
+- [ ] Animated player movement
+- [ ] Integration with ball drag
+- [ ] Explanation text component
+- [ ] Tests for shifting logic
 
-### PBI-11: Taktik-Vergleichsansicht (5 SP)
-- [ ] Split-Screen Layout (zwei Spielfelder)
-- [ ] Taktik-Auswahl pro Seite
-- [ ] Synchronisierung der Angreifer-Positionen
-- [ ] Responsive Layout fuer Querformat
-- [ ] Navigation zur Vergleichsansicht
+### PBI-11: Tactic Comparison View (5 SP)
+- [ ] Split-screen layout (two pitches)
+- [ ] Tactic selection per side
+- [ ] Synchronization of attacker positions
+- [ ] Responsive layout for landscape orientation
+- [ ] Navigation to comparison view
 
-### PBI-12: Lern-Modus (13 SP)
-- [ ] Schritt-Datenstruktur definieren (JSON-Konfiguration)
-- [ ] Lernschritte fuer Manndeckung (5+ Schritte)
-- [ ] Lernschritte fuer Raumdeckung (5+ Schritte)
-- [ ] Lernschritte fuer Verschieben (5+ Schritte)
-- [ ] Schritt-Navigation (Weiter/Zurueck)
-- [ ] Fortschrittsanzeige
-- [ ] Spotlight/Hervorhebung der relevanten Elemente
-- [ ] Begleitende Animationen
-- [ ] Zusammenfassung am Ende
-- [ ] Tests fuer Schritt-Navigation
+### PBI-12: Learning Mode (13 SP)
+- [ ] Define step data structure (JSON configuration)
+- [ ] Learning steps for man-marking (5+ steps)
+- [ ] Learning steps for zonal marking (5+ steps)
+- [ ] Learning steps for shifting (5+ steps)
+- [ ] Step navigation (next/back)
+- [ ] Progress indicator
+- [ ] Spotlight/highlight of relevant elements
+- [ ] Accompanying animations
+- [ ] Summary at the end
+- [ ] Tests for step navigation
 
-### PBI-14: Team-Farben anpassen (5 SP)
-- [ ] Farbauswahl-Komponente
-- [ ] 8 vordefinierte Farbkombinationen
-- [ ] Vereinsfarben-Presets (Bayern, Dortmund, etc.)
-- [ ] Kontrastpruefung zwischen Teams
-- [ ] Store-Integration
+### PBI-14: Customize Team Colors (5 SP)
+- [ ] Color picker component
+- [ ] 8 predefined color combinations
+- [ ] Club color presets (Bayern, Dortmund, etc.)
+- [ ] Contrast check between teams
+- [ ] Store integration

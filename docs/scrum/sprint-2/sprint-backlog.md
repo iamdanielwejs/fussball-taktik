@@ -1,62 +1,62 @@
-# Sprint 2 Backlog: "Taktik erwacht"
+# Sprint 2 Backlog: "Tactics Come Alive"
 
-**Sprint Goal:** Formationen, Manndeckung, Raumdeckung und Navigation
-**Kapazitaet:** 32 Story Points
+**Sprint Goal:** Formations, man-marking, zonal marking, and navigation
+**Capacity:** 32 Story Points
 
 ## Items
 
-| PBI | Titel | SP | Status |
+| PBI | Title | SP | Status |
 |-----|-------|---:|--------|
-| PBI-06 | Formationen-Auswahl | 8 | To Do |
-| PBI-07 | Manndeckung-Visualisierung | 8 | To Do |
-| PBI-08 | Raumdeckung-Visualisierung | 8 | To Do |
-| PBI-10 | Navigation/Hauptmenue | 5 | To Do |
-| PBI-13 | Animierter Ball | 3 | To Do |
+| PBI-06 | Formation Selection | 8 | To Do |
+| PBI-07 | Man-Marking Visualization | 8 | To Do |
+| PBI-08 | Zonal Marking Visualization | 8 | To Do |
+| PBI-10 | Navigation/Main Menu | 5 | To Do |
+| PBI-13 | Animated Ball | 3 | To Do |
 
-## Abhaengigkeiten
+## Dependencies
 
 ```
 PBI-10 (Navigation)     PBI-13 (Ball)
-  └── PBI-06 (Formationen)
-        ├── PBI-07 (Manndeckung)
-        └── PBI-08 (Raumdeckung)
+  └── PBI-06 (Formations)
+        ├── PBI-07 (Man-Marking)
+        └── PBI-08 (Zonal Marking)
 ```
 
-## Tasks (Aufteilung)
+## Tasks (Breakdown)
 
-### PBI-06: Formationen-Auswahl (8 SP)
-- [ ] Formationen-Datenkonfiguration (4-4-2, 4-3-3, 3-5-2)
-- [ ] Formations-Auswahl UI (Buttons mit Vorschau)
-- [ ] Animations-System fuer Spieler-Bewegung
-- [ ] Easing-Funktionen (500-800ms)
-- [ ] Separate Auswahl pro Team
-- [ ] Tests fuer Formationsdaten
+### PBI-06: Formation Selection (8 SP)
+- [ ] Formation data configuration (4-4-2, 4-3-3, 3-5-2)
+- [ ] Formation selection UI (buttons with preview)
+- [ ] Animation system for player movement
+- [ ] Easing functions (500-800ms)
+- [ ] Separate selection per team
+- [ ] Tests for formation data
 
-### PBI-07: Manndeckung (8 SP)
-- [ ] Zuordnungsalgorithmus (naechster Gegenspieler)
-- [ ] Verbindungslinien-Rendering (Konva Lines)
-- [ ] Follow-Logik bei Drag eines Angreifers
-- [ ] Animierte Verteidiger-Bewegung
-- [ ] Erklaertext-Komponente
-- [ ] Tests fuer Zuordnungslogik
+### PBI-07: Man-Marking (8 SP)
+- [ ] Assignment algorithm (nearest opponent)
+- [ ] Connection line rendering (Konva Lines)
+- [ ] Follow logic when dragging an attacker
+- [ ] Animated defender movement
+- [ ] Explanation text component
+- [ ] Tests for assignment logic
 
-### PBI-08: Raumdeckung (8 SP)
-- [ ] Zonen-Definition (Daten-Konfiguration)
-- [ ] Halbtransparente Zonen-Visualisierung
-- [ ] Zonen-Verteidiger-Zuordnung
-- [ ] Verteidiger-Verhalten (Zone nicht verlassen)
-- [ ] Erklaertext-Komponente
-- [ ] Tests fuer Zonen-Logik
+### PBI-08: Zonal Marking (8 SP)
+- [ ] Zone definition (data configuration)
+- [ ] Semi-transparent zone visualization
+- [ ] Zone-defender assignment
+- [ ] Defender behavior (stay within zone)
+- [ ] Explanation text component
+- [ ] Tests for zone logic
 
-### PBI-10: Navigation/Hauptmenue (5 SP)
-- [ ] React Router Setup
-- [ ] Hauptmenue-Layout mit grossen Buttons
-- [ ] Routing zu Taktik-Ansichten
-- [ ] Zurueck-Button
-- [ ] Kindgerechte Icons
+### PBI-10: Navigation/Main Menu (5 SP)
+- [ ] React Router setup
+- [ ] Main menu layout with large buttons
+- [ ] Routing to tactical views
+- [ ] Back button
+- [ ] Child-friendly icons
 
-### PBI-13: Animierter Ball (3 SP)
-- [ ] Ball-Konva-Komponente (Fussball-Optik)
-- [ ] Ball Drag-and-Drop
-- [ ] Ball-Position im Store
-- [ ] Boundary-Check
+### PBI-13: Animated Ball (3 SP)
+- [ ] Ball Konva component (football look)
+- [ ] Ball drag-and-drop
+- [ ] Ball position in store
+- [ ] Boundary check

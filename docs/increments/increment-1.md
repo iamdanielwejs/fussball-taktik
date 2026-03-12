@@ -1,27 +1,27 @@
-# Inkrement 1: "Das Spielfeld steht"
+# Increment 1: "The Pitch Is Set"
 
 **Sprint:** 1 | **Story Points:** 26
 
-## Beschreibung
-Erstes lauffaehiges Produkt-Inkrement: Eine Webanwendung, die ein Fussballfeld mit zwei Teams anzeigt. Spieler koennen frei verschoben werden.
+## Description
+First working product increment: A web application that displays a football pitch with two teams. Players can be freely repositioned.
 
-## Enthaltene PBIs
-- PBI-01: Projekt-Setup (3 SP)
-- PBI-02: Spielfeld-Darstellung (5 SP)
-- PBI-03: Spieler-Figuren (5 SP)
-- PBI-04: Drag-and-Drop fuer Spieler (8 SP)
+## Included PBIs
+- PBI-01: Project Setup (3 SP)
+- PBI-02: Pitch Display (5 SP)
+- PBI-03: Player Figures (5 SP)
+- PBI-04: Drag-and-Drop for Players (8 SP)
 - PBI-05: Zustand State Management (5 SP)
 
-## Nutzbares Ergebnis
-Ein Kind kann:
-- Die App im Browser oeffnen
-- Ein Fussballfeld mit 22 Spielern sehen
-- Spieler mit Maus oder Finger verschieben
-- Zwei Teams anhand der Farben unterscheiden
+## Usable Outcome
+A child can:
+- Open the app in a browser
+- See a football pitch with 22 players
+- Move players using mouse or touch
+- Distinguish two teams by their colors
 
-## Abnahmekriterien
-- [ ] App laeuft unter `npm run dev` fehlerfrei
-- [ ] `npm run build` erzeugt produktionsreifes Bundle
-- [ ] Alle Unit-Tests bestehen (`npm run test`)
-- [ ] Spielfeld wird korrekt mit allen Linien dargestellt
-- [ ] 22 Spieler sind sichtbar und verschiebbar
+## Acceptance Criteria
+- [ ] App runs without errors via `npm run dev`
+- [ ] `npm run build` produces a production-ready bundle
+- [ ] All unit tests pass (`npm run test`)
+- [ ] Pitch is rendered correctly with all lines
+- [ ] 22 players are visible and draggable

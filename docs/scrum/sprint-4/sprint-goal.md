@@ -1,22 +1,22 @@
-# Sprint 4: "Polieren und Ausliefern"
+# Sprint 4: "Polish and Ship"
 
-## Sprint-Zeitraum
-2 Wochen
+## Sprint Duration
+2 weeks
 
 ## Sprint Goal
-Am Ende von Sprint 4 ist die Anwendung vollstaendig poliert und auslieferbar. Aufstellungen koennen gespeichert werden, Sound-Effekte machen die App lebendig, das Design ist tablet-optimiert, und ein Willkommens-Tutorial hilft neuen Nutzern beim Einstieg.
+By the end of Sprint 4, the application is fully polished and ready to ship. Lineups can be saved, sound effects bring the app to life, the design is tablet-optimized, and a welcome tutorial helps new users get started.
 
-## Erfolgskriterien
-- Aufstellungen koennen gespeichert und geladen werden
-- Sound-Effekte begleiten Interaktionen
-- App funktioniert einwandfrei auf Tablets
-- Neuen Nutzern wird ein Tutorial angezeigt
-- Aufstellung kann als Bild exportiert werden
+## Success Criteria
+- Lineups can be saved and loaded
+- Sound effects accompany interactions
+- App works flawlessly on tablets
+- New users are shown a tutorial
+- Lineup can be exported as an image
 
-## Kapazitaet
+## Capacity
 **24 Story Points**
 
-## Risiken
-- Sound-Autoplay wird von Browsern blockiert - Nutzerinteraktion als Trigger noetig
-- LocalStorage-Limits bei vielen gespeicherten Aufstellungen
-- Tutorial-Spotlight-Effekt koennte auf verschiedenen Viewports unterschiedlich wirken
+## Risks
+- Sound autoplay is blocked by browsers - user interaction needed as trigger
+- LocalStorage limits with many saved lineups
+- Tutorial spotlight effect may render differently across viewports

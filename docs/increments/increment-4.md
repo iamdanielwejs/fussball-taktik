@@ -1,38 +1,38 @@
-# Inkrement 4: "Polieren und Ausliefern"
+# Increment 4: "Polish and Ship"
 
 **Sprint:** 4 | **Story Points:** 24
 
-## Beschreibung
-Finales Produkt-Inkrement: Die Anwendung ist vollstaendig poliert, tablet-optimiert und bereit fuer die Auslieferung. Persistenz, Sound, Erklaerungen und Onboarding runden das Erlebnis ab.
+## Description
+Final product increment: The application is fully polished, tablet-optimized, and ready for delivery. Persistence, sound, explanations, and onboarding round out the experience.
 
-## Enthaltene PBIs (neu in diesem Inkrement)
-- PBI-15: Speichern/Laden (5 SP)
-- PBI-16: Sound-Effekte (3 SP)
+## Included PBIs (new in this increment)
+- PBI-15: Save/Load (5 SP)
+- PBI-16: Sound Effects (3 SP)
 - PBI-17: Responsive Tablets (5 SP)
-- PBI-18: Erklaer-Popups (3 SP)
-- PBI-19: Export als Bild (3 SP)
-- PBI-20: Willkommens-Tutorial (5 SP)
+- PBI-18: Explanation Popups (3 SP)
+- PBI-19: Export as Image (3 SP)
+- PBI-20: Welcome Tutorial (5 SP)
 
-## Nutzbares Ergebnis
-Ein Kind kann zusaetzlich zu Inkrement 3:
-- Aufstellungen speichern, benennen und spaeter wieder laden
-- Sound-Effekte bei Interaktionen hoeren (abschaltbar)
-- Die App bequem auf Tablets nutzen
-- Fachbegriffe antippen und Erklaerungen lesen
-- Die aktuelle Aufstellung als Bild exportieren
-- Beim ersten Besuch ein Willkommens-Tutorial durchlaufen
+## Usable Outcome
+In addition to Increment 3, a child can:
+- Save formations, name them, and load them later
+- Hear sound effects during interactions (can be muted)
+- Use the app comfortably on tablets
+- Tap technical terms and read explanations
+- Export the current formation as an image
+- Go through a welcome tutorial on first visit
 
-## Abnahmekriterien
-- [ ] Alle Inkremente 1-3-Kriterien gelten weiterhin
-- [ ] Speichern und Laden funktioniert ueber Browser-Neustarts hinweg
-- [ ] Sounds spielen bei Interaktionen ab und sind stummschaltbar
-- [ ] App ist auf iPad und Android-Tablet Viewports getestet
-- [ ] Mindestens 10 Fachbegriffe sind mit Popups erklaert
-- [ ] PNG-Export erzeugt ein brauchbares Bild
-- [ ] Tutorial startet beim ersten Besuch automatisch
+## Acceptance Criteria
+- [ ] All Increment 1-3 criteria continue to apply
+- [ ] Save and load works across browser restarts
+- [ ] Sounds play on interactions and can be muted
+- [ ] App is tested on iPad and Android tablet viewports
+- [ ] At least 10 technical terms have explanation popups
+- [ ] PNG export produces a usable image
+- [ ] Tutorial starts automatically on first visit
 
-## Release-Kriterien
-- [ ] Alle 20 PBIs erfuellen die Definition of Done
-- [ ] Gesamte Anwendung ist in Chrome, Safari und Firefox getestet
-- [ ] Performance: Ladezeit < 3 Sekunden, Interaktion > 30 FPS
-- [ ] Kein bekannter Blocker-Bug
+## Release Criteria
+- [ ] All 20 PBIs meet the Definition of Done
+- [ ] Entire application is tested in Chrome, Safari, and Firefox
+- [ ] Performance: load time < 3 seconds, interaction > 30 FPS
+- [ ] No known blocker bugs

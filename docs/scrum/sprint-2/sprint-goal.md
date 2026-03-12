@@ -1,21 +1,21 @@
-# Sprint 2: "Taktik erwacht"
+# Sprint 2: "Tactics Come Alive"
 
-## Sprint-Zeitraum
-2 Wochen
+## Sprint Duration
+2 weeks
 
 ## Sprint Goal
-Am Ende von Sprint 2 kann ein Kind zwischen verschiedenen Formationen wechseln und die zwei wichtigsten Taktik-Konzepte (Manndeckung und Raumdeckung) interaktiv erleben. Ein Hauptmenue ermoeglicht die Navigation zwischen den Ansichten.
+By the end of Sprint 2, a child can switch between different formations and interactively experience the two most important tactical concepts (man-marking and zonal marking). A main menu enables navigation between views.
 
-## Erfolgskriterien
-- Formationen lassen sich per Knopfdruck wechseln mit Animation
-- Manndeckung: Verteidiger folgen den zugeordneten Angreifern
-- Raumdeckung: Zonen sind sichtbar, Verteidiger bleiben in ihren Bereichen
-- Navigation zwischen Menue und Taktik-Ansichten funktioniert
+## Success Criteria
+- Formations can be switched at the press of a button with animation
+- Man-marking: defenders follow their assigned attackers
+- Zonal marking: zones are visible, defenders stay within their areas
+- Navigation between menu and tactical views works
 
-## Kapazitaet
+## Capacity
 **32 Story Points**
 
-## Risiken
-- Manndeckungs-Zuordnungslogik koennte komplex werden
-- Zonen-Visualisierung muss kindgerecht und nicht ueberladen sein
-- Animations-Performance bei gleichzeitiger Bewegung vieler Spieler
+## Risks
+- Man-marking assignment logic could become complex
+- Zone visualization must be child-friendly and not cluttered
+- Animation performance when moving many players simultaneously

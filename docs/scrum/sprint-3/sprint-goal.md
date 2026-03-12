@@ -1,21 +1,21 @@
-# Sprint 3: "Lernen und Verstehen"
+# Sprint 3: "Learn and Understand"
 
-## Sprint-Zeitraum
-2 Wochen
+## Sprint Duration
+2 weeks
 
 ## Sprint Goal
-Am Ende von Sprint 3 gibt es einen gefuehrten Lern-Modus, der jede Taktik Schritt fuer Schritt erklaert. Kinder koennen Taktiken nebeneinander vergleichen, das Verschieben zum Ball erleben und ihre Teams individuell einfaerben.
+By the end of Sprint 3, there is a guided learning mode that explains each tactic step by step. Children can compare tactics side by side, experience shifting toward the ball, and customize their team colors.
 
-## Erfolgskriterien
-- Verschieben zum Ball ist als dritte Taktik verfuegbar
-- Lern-Modus fuehrt Kinder durch mindestens 5 Schritte pro Taktik
-- Vergleichsansicht zeigt zwei Taktiken nebeneinander
-- Team-Farben sind anpassbar
+## Success Criteria
+- Shifting toward the ball is available as a third tactic
+- Learning mode guides children through at least 5 steps per tactic
+- Comparison view shows two tactics side by side
+- Team colors are customizable
 
-## Kapazitaet
+## Capacity
 **31 Story Points**
 
-## Risiken
-- Lern-Modus (13 SP) ist das groesste einzelne PBI - frueh im Sprint beginnen
-- Synchronisierung der Vergleichsansicht koennte komplex sein
-- Verschiebungslogik muss intuitiv und visuell verstaendlich sein
+## Risks
+- Learning mode (13 SP) is the largest single PBI - start early in the sprint
+- Synchronizing the comparison view could be complex
+- Shifting logic must be intuitive and visually understandable
